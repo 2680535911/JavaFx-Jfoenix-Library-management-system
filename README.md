@@ -1,14 +1,38 @@
-# JavaFx-Jfoenix-Library-management-system
-#1.1	介绍
-基于 javaFx 开发的图书管理系统，采用 jfoenix-8.0.4 开源框架，使用 MaterialDesighn UI风格。实现一个简单的图书管理系统，包括图书的添加、删除、查找、借阅和归还功能。
-#1.2	适用范围
-项目组内部使用。
-#1.3	项目运行环境
+图书管理系统
+该项目是基于JavaFx开发的图书管理系统，使用了jfoenix-8.0.4开源框架和MaterialDesign UI风格。它提供了图书的添加、删除、查找、借阅和归还等功能。
+
+适用范围
+该项目适用于内部使用。
+
+项目运行环境
 MySQL Community Server - GPL Version: 8.0.37
-IntelliJ IDEA 2023.3.4(UItimate Edition) 
-language level:8
-SDK:1.8 Amazon Corretto version 1.8.0_412
-JDK:1.8
-#1.4	引用文件
-【1】	jfoenix-8.0.4.jar
-【2】	mysql-connector-j-8.2.0.jar
+IntelliJ IDEA 2023.3.4 (Ultimate Edition)
+Language Level: 8
+SDK: 1.8 Amazon Corretto version 1.8.0_412
+JDK: 1.8
+引用文件
+jfoenix-8.0.4.jar
+mysql-connector-j-8.2.0.jar
+请根据以上信息配置您的开发环境，并确保正确引用所需的jar文件。
+
+使用方法
+配置MySQL数据库，并确保已创建相应的图书管理系统数据库。
+在IntelliJ IDEA中导入项目。
+根据需要修改数据库连接配置（位于源代码中的相关文件）。
+运行项目。
+功能说明
+该图书管理系统具有以下功能：
+
+添加图书：可以输入图书信息并将其添加到系统中。
+删除图书：根据图书ID或其他标识符从系统中删除特定图书。
+查找图书：根据关键字或其他条件在系统中查找图书。
+借阅图书：将图书借出给读者，并记录借阅信息。
+归还图书：将借阅的图书归还，并更新相应的借阅信息。
+请根据实际需求使用这些功能。
+
+版权信息
+该项目遵循相关开源许可证。请参阅每个引用文件的许可证信息以了解详细信息。
+
+如有任何问题或疑问，请联系项目负责人。
+
+感谢您使用图书管理系统！
