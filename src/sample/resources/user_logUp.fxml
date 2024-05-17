@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane style="-fx-background-image: url('/sample/image/logUp.png')" prefHeight="810.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserLogUp" >
+    <children>
+        <JFXTextField fx:id="tf_id" focusColor="DEEPSKYBLUE" prefWidth="205" layoutX="420.0" layoutY="225.0" style="-fx-background-color: rgba(255,255,255,0.5);" />
+        <JFXTextField fx:id="tf_userName" focusColor="DEEPSKYBLUE" prefWidth="205" layoutX="420.0" layoutY="273.0" style="-fx-background-color: rgba(255,255,255,0.5);" />
+        <JFXTextField fx:id="tf_email" focusColor="DEEPSKYBLUE" prefWidth="205" layoutX="420.0" layoutY="318.0" style="-fx-background-color: rgba(255,255,255,0.5);" />
+        <PasswordField fx:id="tf_passWord" prefWidth="205" layoutX="420.0" layoutY="363.0" style="-fx-background-color: rgba(255,255,255,0.5);" />
+        <JFXTextField fx:id="tf_admin" focusColor="DEEPSKYBLUE" prefWidth="205" layoutX="420.0" layoutY="410.0" style="-fx-background-color: rgba(255,255,255,0.5);" />
+        <JFXRadioButton fx:id="rb_sex_man" layoutX="440.0" layoutY="466.0" mnemonicParsing="false" selected="true" text="  男" textFill="WHITE">
+            <toggleGroup>
+                <ToggleGroup fx:id="user_sex" />
+            </toggleGroup>
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </JFXRadioButton>
+        <JFXRadioButton fx:id="rb_sex_woman" layoutX="525.0" layoutY="466.0" mnemonicParsing="false" text="  女" textFill="WHITE" toggleGroup="$user_sex" >
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </JFXRadioButton>
+        <JFXButton fx:id="btn_confirm" layoutX="368.0" layoutY="575.0" mnemonicParsing="false" onAction="#confirm" prefHeight="25.0" prefWidth="200.0" text="注    册" >
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </JFXButton>
+        <Label layoutX="215.0" layoutY="54.0" text="" textFill="GOLD">//注册
+            <font>
+                <Font name="System Bold Italic" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="320.0" layoutY="222.0" text=" 用 户 名：" textFill="#ffffff">
+            <font>
+                <Font name="System Bold Italic" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="320.0" layoutY="270.0" text="用户姓名：" textFill="#ffffff">
+            <font>
+                <Font name="System Bold Italic" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="313.0" layoutY="315.0" text=" 邮       箱：" textFill="#ffffff">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></Label>
+        <Label layoutX="320.0" layoutY="360.0" text="密       码：" textFill="#ffffff">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="320.0" layoutY="410.0" text="管理密钥：" textFill="#ffffff">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="418.0" layoutY="390.0" text="请输入6-16位数字、字母或常用符号" textFill="#ff0010">
+            <font>
+                <Font  size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="458.0" layoutY="435.0" text="读者注册无需填写" textFill="#727272">
+            <font>
+                <Font  size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="320.0" layoutY="500.0" text="用户类型：" textFill="#ffffff">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+
+        <Separator layoutX="315.0" layoutY="540.0" prefWidth="310.0" />
+        <Hyperlink fx:id="hbl_logup" textFill="#4576f1" layoutX="410.0" layoutY="550.0" onAction="#goBackLogin" text="已有账号？点击登录" />
+        <JFXRadioButton fx:id="rdb_reader" layoutX="440.0" layoutY="506.0" mnemonicParsing="false" selected="true" text="读者" textFill="WHITE">
+            <toggleGroup>
+                <ToggleGroup fx:id="user_type" />
+            </toggleGroup>
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </JFXRadioButton>
+        <JFXRadioButton fx:id="rdb_user" layoutX="525.0" layoutY="506.0" mnemonicParsing="false" text="管理员" textFill="WHITE" toggleGroup="$user_type" >
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </JFXRadioButton>
+
+
+
+      <Label layoutX="320.0" layoutY="462.0" text="性       别：" textFill="#ffffff">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
